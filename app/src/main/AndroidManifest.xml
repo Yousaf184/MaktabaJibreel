@@ -19,12 +19,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.HomeActivity" />
-        <activity android:name=".activities.AboutUsActivity" />
-        <activity android:name=".activities.DetailedSearchActivity" />
-        <activity android:name=".activities.SettingsActivity" />
-        <activity android:name=".activities.CurrentlyReadActivity" />
-        <activity android:name=".activities.BookmarkActivity" />
-        <activity android:name=".activities.MyLibraryActivity"></activity>
+        <activity android:name=".activities.AboutUsActivity"
+                  android:parentActivityName=".activities.HomeActivity"/>
+        <activity android:name=".activities.DetailedSearchActivity"
+                  android:parentActivityName=".activities.HomeActivity"/>
+        <activity android:name=".activities.SettingsActivity"
+                  android:parentActivityName=".activities.HomeActivity"/>
+        <activity android:name=".activities.CurrentlyReadActivity"
+                  android:parentActivityName=".activities.HomeActivity"/>
+        <activity android:name=".activities.BookmarkActivity"
+                  android:parentActivityName=".activities.HomeActivity"/>
+        <activity android:name=".activities.MyLibraryActivity"
+                  android:parentActivityName=".activities.HomeActivity"/>
     </application>
 
 </manifest>

@@ -1,7 +1,11 @@
 package com.example.yousafkhan.maktabajibreel.activities;
 
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.example.yousafkhan.maktabajibreel.Models.ListViewItem;
@@ -22,6 +26,14 @@ public class BookmarkActivity extends AppCompatActivity {
         bookmarkListview = findViewById(R.id.bookmark_listview);
 
         fillListView();
+
+        // set toolbar as actionbar
+        Toolbar toolbar = findViewById(R.id.toolbar_bookmark);
+        setSupportActionBar(toolbar);
+
+        // add back button
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     private ArrayList<ListViewItem> getDataList() {
@@ -38,5 +50,17 @@ public class BookmarkActivity extends AppCompatActivity {
         ArrayList<ListViewItem> dataList = getDataList();
         CustomAdapter adapter = new CustomAdapter(this, dataList);
         bookmarkListview.setAdapter(adapter);
+    }
+
+    // take back to home activity when back icon on toolbar is clicked
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

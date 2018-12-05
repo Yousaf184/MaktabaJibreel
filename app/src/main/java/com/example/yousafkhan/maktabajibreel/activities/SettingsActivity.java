@@ -2,8 +2,12 @@ package com.example.yousafkhan.maktabajibreel.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -32,6 +36,14 @@ public class SettingsActivity extends AppCompatActivity {
         fillSpinner(searchResultsLimitSpinner, R.array.search_results_limit_options);
         fillSpinner(quranTextSizeSpinner, R.array.settings_activity_text_size_options);
         fillSpinner(hadeesTextSizeSpinner, R.array.settings_activity_text_size_options);
+
+        // set toolbar as actionbar
+        Toolbar toolbar = findViewById(R.id.toolbar_settings);
+        setSupportActionBar(toolbar);
+
+        // add back button
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     // fills the passed in spinner with passed in array resource
@@ -70,5 +82,17 @@ public class SettingsActivity extends AppCompatActivity {
         builder.attachAlphaSlideBar(); // attach AlphaSlideBar
         builder.attachBrightnessSlideBar(); // attach BrightnessSlideBar
         builder.show(); // show dialog
+    }
+
+    // take back to home activity when back icon on toolbar is clicked
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

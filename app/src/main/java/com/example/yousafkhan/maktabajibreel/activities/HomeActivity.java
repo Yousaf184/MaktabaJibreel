@@ -84,7 +84,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
 
     // open navigation drawer when menu icon on actionbar is tapped
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
