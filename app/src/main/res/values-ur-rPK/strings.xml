@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مکتبہ جبریل</string>
+    <string name="welcome">خوش  آمدید</string>
+    <string name="home_title">اردو خصوصا اسلامی کتب کا سب سے برا ذخيرہ</string>
+    <string name="search">تلاش کیجیے</string>
+    <string name="books">ترتیبات</string>
+    <string name="search_details">تفصیل تلاش</string>
+    <string name="bookmark">بک مارک</string>
+    <string name="current_readings">حالیہ مطالعہ</string>
+    <string name="my_library">میری لائبریری</string>
+    <string name="about_us">ہمارے بارے میں</string>
+    <string name="about_us_parag_1">
+        علم دین ٹیم کا بنیادی مقصد اردو دینی کتب کو ڈیجیٹائذ کرنا ہے اور نئے
+        دور کے تقاضوں کے مطابق سہولت تہقیق و تلاش فراہم کرنا ہے
+    </string>
+    <string name="about_us_parag_2">
+        مکتبہ جبریل اینڈرائڈ اسی تسلسل کی ایک کڑی ہے، جس میں ونڈوذ مکتبہ کی طرح تفسیر،
+        حدیث، فقہ، فتاوی، درس نظامی، تاریخ اسلامی و دیگر علوم و فنون کی متعلقہ کتب موجود ہیں،
+        اورالحمداللہ ان علوم کی کتب کا نہ صرف مطالعہ ممکن ہے بلکہ مکتبہ ان تمام کتب میں تلاش کی
+        سہولت سے بھی مذین ہے
+    </string>
+    <string name="about_us_parag_3">
+        تمام کتب کے حقوق مؤلفین د ناشرین کے حق میں محفوظ ہیں، اگر کوئی غلطی پائیں تو متعلقہ ناشر و مؤلف
+        سے رجوع فرمائیں، مکتبہ جبریل کی ٹیم کا مقصد صرف سہولت تحقیق و تلاش ہے۔ مکتبہ جبریل
+        کا کسی قسم کے مالی فائدے کے لیے استعمال ممنوع ہے۔جزاك اللهُ خيرًا
+    </string>
+    <string name="maktaba_jibreel_email">maktabajibreel@gmail.com</string>
+    <string name="detailed_search_title">تلاش کریں</string>
+    <string name="where_to_search">کہاں تلاش کریں</string>
+    <string name="contents">فہرست</string>
+    <string name="complete_book">پوری کتاب</string>
+    <string name="how_to_search">کیسے تلاش کریں</string>
+    <string name="complete_words">تمام الفاظ</string>
+    <string name="some_words">کوئی الفاظ</string>
+    <string name="complete_match">مکمل مطابقت</string>
+    <string name="order">ترتیب</string>
+    <string name="only_complete_words">صرف مکمل الفاظ</string>
+    <string name="ignore_search_terms">عربی ہمذہ اور ی وغیرہ کو نظر انداذ کریں</string>
+    <string name="search_criteria">تلاش کا دائرہ کار</string>
+    <string name="authority">اختیار</string>
+    <string name="settings">ترتیبات</string>
+    <string name="general">جنرل</string>
+    <string name="only_wifi">صرف وائی فائی انٹرنٹ</string>
+    <string name="search_results_limit">تلاش کے نتائج کی حد</string>
+    <string name="import_books">کتب درآمد</string>
+    <string name="storage_location">سٹوریج کی جگہ</string>
+    <string name="viewer_setting">ویور کی ترتیبات</string>
+    <string name="quran_text_color">قرآن خط کا رنگ</string>
+    <string name="quran_text_size">قرآن خط کا حجم</string>
+    <string name="hadees_text_size">حدیث خط کا حجم</string>
+
+    <string-array name="search_results_limit_options">
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>700</item>
+        <item>900</item>
+        <item>1000</item>
+    </string-array>
+
+    <string name="storage_path">Storage/emulated/0/maktabaJibrail</string>
+
+    <string-array name="settings_activity_text_size_options">
+        <item>15</item>
+        <item>17</item>
+        <item>19</item>
+        <item>21</item>
+        <item>23</item>
+        <item>25</item>
+    </string-array>
+
+    <string name="currently_read">حالیہ مطالعہ</string>
+    <string name="hadees_sharif">حدیث  شریف</string>
+</resources>

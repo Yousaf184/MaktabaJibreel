@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailedSearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_detailed_search"
+        style="@style/toolbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/activity_toolbar_text"
+            android:text="@string/detailed_search_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorHomeBackground"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_detailed_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="13dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/colorCardBackgroundDark"
+            app:cardCornerRadius="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/search_in_title"
+                    android:text="@string/where_to_search"
+                    style="@style/title_text"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <RadioGroup
+                    android:id="@+id/search_in_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/search_in_title"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/contents_radio_button"
+                        style="@style/radio_button"
+                        android:text="@string/contents"
+                        android:layout_marginEnd="20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/complete_book_radio_button"
+                        style="@style/radio_button"
+                        android:text="@string/complete_book" />
+
+                </RadioGroup>
+
+                <View
+                    android:id="@+id/horizontal_line_break_about_us"
+                    style="@style/horizontal_line_break"
+                    app:layout_constraintTop_toBottomOf="@id/search_in_radio_group"
+                    android:layout_marginTop="15dp" />
+
+                <TextView
+                    android:id="@+id/how_to_search_title"
+                    android:text="@string/how_to_search"
+                    style="@style/title_text"
+                    app:layout_constraintTop_toBottomOf="@id/horizontal_line_break_about_us"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="17dp"/>
+
+                <RadioGroup
+                    android:id="@+id/how_to_search_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/how_to_search_title"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/complete_words_radio_button"
+                            style="@style/radio_button"
+                            android:text="@string/complete_words"
+                            android:layout_marginEnd="5dp"/>
+
+                        <RadioButton
+                            android:id="@+id/some_words_radio_button"
+                            style="@style/radio_button"
+                            android:text="@string/some_words" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <RadioButton
+                            android:id="@+id/complete_match_radio_button"
+                            style="@style/radio_button"
+                            android:text="@string/complete_match"
+                            android:layout_marginEnd="7dp"/>
+
+                        <RadioButton
+                            android:id="@+id/order_radio_button"
+                            style="@style/radio_button"
+                            android:text="@string/order" />
+
+                    </LinearLayout>
+
+                </RadioGroup>
+
+                <View
+                    android:id="@+id/horizontal_line_break_2_about_us"
+                    style="@style/horizontal_line_break"
+                    app:layout_constraintTop_toBottomOf="@id/how_to_search_radio_group"
+                    android:layout_marginTop="15dp" />
+
+                <RadioButton
+                    android:id="@+id/only_complete_words_radio_group"
+                    style="@style/radio_button"
+                    android:text="@string/only_complete_words"
+                    app:layout_constraintTop_toBottomOf="@id/horizontal_line_break_2_about_us"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="15dp"/>
+
+                <RadioButton
+                    android:id="@+id/ignore_search_radio_group"
+                    style="@style/radio_button"
+                    android:text="@string/ignore_search_terms"
+                    app:layout_constraintTop_toBottomOf="@id/only_complete_words_radio_group"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/search_criteria_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_criteria"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    app:layout_constraintTop_toBottomOf="@id/ignore_search_radio_group"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"/>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/authority"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:background="@drawable/round_button_background"
+                    app:layout_constraintTop_toBottomOf="@id/search_criteria_text"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="25dp"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@color/colorCardBackgroundDark">
+
+    <ImageView
+        android:id="@+id/listview_row_icon"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/book"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/currently_read_book_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hadees_sharif"
+        android:textSize="21sp"
+        android:textColor="@color/colorText"
+        app:layout_constraintTop_toTopOf="@id/listview_row_icon"
+        app:layout_constraintBottom_toBottomOf="@id/listview_row_icon"
+        app:layout_constraintStart_toEndOf="@id/listview_row_icon"
+        android:layout_marginStart="15dp"/>
+
+    <View
+        style="@style/horizontal_line_break"
+        app:layout_constraintTop_toBottomOf="@id/currently_read_book_title"
+        android:layout_marginTop="25dp" />
+
+</android.support.constraint.ConstraintLayout>
