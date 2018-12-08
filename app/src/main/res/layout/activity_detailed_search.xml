@@ -86,11 +86,6 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp">
 
-                    <!--<LinearLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:orientation="horizontal">-->
-
                         <RadioButton
                             android:id="@+id/complete_words_radio_button"
                             style="@style/radio_button"
@@ -102,14 +97,6 @@
                             style="@style/radio_button"
                             android:text="@string/some_words" />
 
-                    <!--</LinearLayout>-->
-
-                    <!--<LinearLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:orientation="horizontal"-->
-                        <!--android:layout_marginTop="8dp">-->
-
                         <RadioButton
                             android:id="@+id/complete_match_radio_button"
                             style="@style/radio_button"
@@ -120,9 +107,7 @@
                             android:id="@+id/order_radio_button"
                             style="@style/radio_button"
                             android:text="@string/order" />
-
-                    <!--</LinearLayout>-->
-
+                    
                 </RadioGroup>
 
                 <View
