@@ -107,7 +107,7 @@
                             android:id="@+id/order_radio_button"
                             style="@style/radio_button"
                             android:text="@string/order" />
-                    
+
                 </RadioGroup>
 
                 <View
