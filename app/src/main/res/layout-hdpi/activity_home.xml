@@ -41,14 +41,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
                     android:paddingLeft="13dp"
                     android:paddingRight="13dp">
 
                     <ImageView
                         android:id="@+id/logo"
                         android:layout_width="match_parent"
-                        android:layout_height="85dp"
+                        android:layout_height="50dp"
                         android:src="@drawable/logo"
                         app:layout_constraintTop_toTopOf="parent"
                         android:layout_marginTop="9dp" />
@@ -62,7 +61,7 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         android:layout_marginTop="10dp"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textColor="@color/colorText"/>
 
                     <TextView
@@ -73,7 +72,7 @@
                         app:layout_constraintTop_toBottomOf="@id/welcome_text"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        android:textSize="13sp"
+                        android:textSize="12sp"
                         android:layout_marginTop="4dp"/>
 
                     <android.support.v7.widget.CardView
@@ -83,7 +82,7 @@
                         app:cardCornerRadius="5dp"
                         app:cardBackgroundColor="@color/colorCardBackgroundLight"
                         app:layout_constraintTop_toBottomOf="@id/home_title_text"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="6dp">
 
                         <EditText
                             android:layout_width="match_parent"
@@ -98,7 +97,7 @@
 
                     <android.support.v7.widget.CardView
                         android:id="@+id/books_card"
-                        android:layout_width="140dp"
+                        android:layout_width="125dp"
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="@color/colorCardBackgroundLight"
                         app:cardCornerRadius="5dp"
@@ -118,8 +117,8 @@
 
                             <ImageView
                                 android:id="@+id/books_card_icon"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
                                 android:src="@drawable/stack"
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"/>
@@ -132,7 +131,7 @@
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"
                                 android:layout_marginTop="6dp"
-                                android:textSize="15sp"/>
+                                android:textSize="13sp"/>
 
                         </android.support.constraint.ConstraintLayout>
 
@@ -140,7 +139,7 @@
 
                     <android.support.v7.widget.CardView
                         android:id="@+id/search_details_card"
-                        android:layout_width="140dp"
+                        android:layout_width="125dp"
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="@color/colorCardBackgroundLight"
                         app:cardCornerRadius="5dp"
@@ -157,7 +156,7 @@
                             <ImageView
                                 android:id="@+id/search_detail_card_icon"
                                 android:layout_width="49dp"
-                                android:layout_height="49dp"
+                                android:layout_height="30dp"
                                 android:src="@drawable/ic_search"
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"/>
@@ -170,7 +169,7 @@
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"
                                 android:layout_marginTop="6dp"
-                                android:textSize="15sp"/>
+                                android:textSize="13sp"/>
 
                         </android.support.constraint.ConstraintLayout>
 
@@ -178,7 +177,7 @@
 
                     <android.support.v7.widget.CardView
                         android:id="@+id/bookmark_card"
-                        android:layout_width="140dp"
+                        android:layout_width="125dp"
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="@color/colorCardBackgroundLight"
                         app:cardCornerRadius="5dp"
@@ -195,7 +194,7 @@
                             <ImageView
                                 android:id="@+id/bookmark_card_icon"
                                 android:layout_width="49dp"
-                                android:layout_height="49dp"
+                                android:layout_height="30dp"
                                 android:src="@drawable/ic_star"
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"/>
@@ -208,7 +207,7 @@
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"
                                 android:layout_marginTop="6dp"
-                                android:textSize="15sp"/>
+                                android:textSize="13sp"/>
 
                         </android.support.constraint.ConstraintLayout>
 
@@ -216,7 +215,7 @@
 
                     <android.support.v7.widget.CardView
                         android:id="@+id/current_readings_card"
-                        android:layout_width="140dp"
+                        android:layout_width="125dp"
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="@color/colorCardBackgroundLight"
                         app:cardCornerRadius="5dp"
@@ -233,7 +232,7 @@
                             <ImageView
                                 android:id="@+id/current_readings_card_icon"
                                 android:layout_width="49dp"
-                                android:layout_height="49dp"
+                                android:layout_height="30dp"
                                 android:src="@drawable/book"
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"/>
@@ -246,7 +245,7 @@
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"
                                 android:layout_marginTop="6dp"
-                                android:textSize="15sp"/>
+                                android:textSize="13sp"/>
 
                         </android.support.constraint.ConstraintLayout>
 
@@ -254,7 +253,7 @@
 
                     <android.support.v7.widget.CardView
                         android:id="@+id/my_library_card"
-                        android:layout_width="140dp"
+                        android:layout_width="125dp"
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="@color/colorCardBackgroundLight"
                         app:cardCornerRadius="5dp"
@@ -271,7 +270,7 @@
                             <ImageView
                                 android:id="@+id/my_library_card_icon"
                                 android:layout_width="49dp"
-                                android:layout_height="49dp"
+                                android:layout_height="30dp"
                                 android:src="@drawable/bars"
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"/>
@@ -284,7 +283,7 @@
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"
                                 android:layout_marginTop="6dp"
-                                android:textSize="15sp"/>
+                                android:textSize="13sp"/>
 
                         </android.support.constraint.ConstraintLayout>
 
