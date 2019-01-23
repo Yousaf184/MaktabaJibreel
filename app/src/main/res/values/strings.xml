@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Maktaba Jibreel</string>ِ
     <string name="welcome">Welcome</string>
@@ -70,4 +71,16 @@
 
     <string name="currently_read">Currently Read Books</string>
     <string name="hadees_sharif">Hadees Shareef</string>
+
+    <string name="filter_title">Filter Search</string>
+    <string name="filter_list">List</string>
+    <string name="filter_arrangement">Arrangement</string>
+    <string name="filter_any_word">Any Word</string>
+    <string name="filter_search_results">Search Results  [14.17]</string>
+    <string name="filter_book_name">Book Version 1</string>
+    <string name="filter_book_results">Results 2</string>
+    <string name="filter_book_result_list">This is a search result from a book</string>
+
+    <string name="english">English</string>
+    <string name="urdu">Urdu</string>
 </resources>

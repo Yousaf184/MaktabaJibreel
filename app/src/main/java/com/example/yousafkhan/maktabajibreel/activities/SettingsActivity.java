@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
+import com.example.yousafkhan.maktabajibreel.LocalManager;
 import com.example.yousafkhan.maktabajibreel.R;
 import com.skydoves.colorpickerview.ColorEnvelope;
 import com.skydoves.colorpickerview.ColorPickerDialog;
@@ -25,6 +26,10 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String languageToLoad  = LocalManager.getAppLanguageFromSharedPrefs(this);
+        LocalManager.loadLanguage(this, languageToLoad);
+
         setContentView(R.layout.activity_settings);
 
         quranTextColorImg = findViewById(R.id.quran_text_color_imageview);

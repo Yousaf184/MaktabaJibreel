@@ -14,34 +14,36 @@
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".activities.HomeActivity" />
         <activity
             android:name=".activities.AboutUsActivity"
-            android:parentActivityName=".activities.HomeActivity"
-            android:label=""/>
+            android:label=""
+            android:parentActivityName=".activities.HomeActivity" />
         <activity
             android:name=".activities.DetailedSearchActivity"
-            android:parentActivityName=".activities.HomeActivity"
-            android:label=""/>
+            android:label=""
+            android:parentActivityName=".activities.HomeActivity" />
         <activity
             android:name=".activities.SettingsActivity"
-            android:parentActivityName=".activities.HomeActivity"
-            android:label=""/>
+            android:label=""
+            android:parentActivityName=".activities.HomeActivity" />
         <activity
             android:name=".activities.CurrentlyReadActivity"
-            android:parentActivityName=".activities.HomeActivity"
-            android:label=""/>
+            android:label=""
+            android:parentActivityName=".activities.HomeActivity" />
         <activity
             android:name=".activities.BookmarkActivity"
-            android:parentActivityName=".activities.HomeActivity"
-            android:label=""/>
+            android:label=""
+            android:parentActivityName=".activities.HomeActivity" />
         <activity
             android:name=".activities.MyLibraryActivity"
-            android:parentActivityName=".activities.HomeActivity"
-            android:label=""/>
+            android:label=""
+            android:parentActivityName=".activities.HomeActivity" />
+        <activity android:name=".activities.SearchResults"></activity>
     </application>
 
 </manifest>

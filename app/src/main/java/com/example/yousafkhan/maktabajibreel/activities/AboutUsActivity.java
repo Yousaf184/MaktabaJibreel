@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.example.yousafkhan.maktabajibreel.LocalManager;
 import com.example.yousafkhan.maktabajibreel.R;
 
 public class AboutUsActivity extends AppCompatActivity {
@@ -14,6 +15,10 @@ public class AboutUsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String languageToLoad  = LocalManager.getAppLanguageFromSharedPrefs(this);
+        LocalManager.loadLanguage(this, languageToLoad);
+
         setContentView(R.layout.activity_about_us);
 
         // set toolbar as actionbar

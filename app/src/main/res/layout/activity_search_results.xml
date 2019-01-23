@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHomeBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_gravity="center">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorCardBackgroundLight">
+        </SearchView>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="@color/colorCardBackgroundDark"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/first-card"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/second-card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundDark">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/filter-title-button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_title"
+                        card_view:layout_constraintRight_toRightOf="parent"
+                        android:padding="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_arrow_drop_down"
+                        card_view:layout_constraintRight_toLeftOf="@+id/filter-title-button"/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/third-card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintTop_toBottomOf="@+id/second-card"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundLight"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_list"
+                        android:padding="5dp"
+                        android:textSize="13sp"/>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/cross"
+                        android:layout_margin="5dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_arrangement"
+                        android:padding="5dp"
+                        android:textSize="13sp"/>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/cross"
+                        android:layout_margin="5dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_any_word"
+                        android:padding="5dp"
+                        android:textSize="13sp"/>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/cross"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/forth-card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundDark"
+                card_view:layout_constraintTop_toBottomOf="@+id/third-card">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_search_results"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fifth-card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintTop_toBottomOf="@+id/forth-card"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundLight"
+                >
+
+                <android.support.constraint.ConstraintLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_book_name"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        app:layout_constraintRight_toRightOf="parent"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_book_results"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sixth-card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintTop_toBottomOf="@+id/fifth-card"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundDark"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:padding="10dp"
+                            />
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_book_result_list"
+                        android:padding="2dp"/>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:layout_gravity="left"
+                            android:padding="10dp"
+                            />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/seven-card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintTop_toBottomOf="@+id/sixth-card"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundDark"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:padding="10dp"
+                            />
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_book_result_list"
+                        android:padding="2dp"/>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:padding="10dp"
+                            />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/eight-card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintTop_toBottomOf="@+id/seven-card"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundLight"
+                >
+
+                <android.support.constraint.ConstraintLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_book_name"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        app:layout_constraintRight_toRightOf="parent"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_book_results"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ninth-card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintTop_toBottomOf="@+id/eight-card"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundDark"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:padding="10dp"
+                            />
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_book_result_list"
+                        android:padding="2dp"/>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:padding="10dp"
+                            />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/tenth-card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintTop_toBottomOf="@+id/ninth-card"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundDark"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:padding="10dp"
+                            />
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_book_result_list"
+                        android:padding="2dp"/>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:padding="10dp"
+                            />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

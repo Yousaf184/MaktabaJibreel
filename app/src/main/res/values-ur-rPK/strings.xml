@@ -72,4 +72,16 @@
 
     <string name="currently_read">حالیہ مطالعہ</string>
     <string name="hadees_sharif">حدیث  شریف</string>
+
+    <string name="filter_title">فلٹر استعمال کیجیے</string>
+    <string name="filter_list">فہرست</string>
+    <string name="filter_arrangement">ترتیب</string>
+    <string name="filter_any_word">کوئ الفاظ</string>
+    <string name="filter_search_results">تلاش کے نتائج  [14.17]</string>
+    <string name="filter_book_name">کتاب المسائل جلد 1</string>
+    <string name="filter_book_results">نتائج 2</string>
+    <string name="filter_book_result_list">نماذ سورج کےطلوع کےنماذفجرصحیح نہیں بوقت غروب</string>
+
+    <string name="english">انگلش</string>
+    <string name="urdu">اردو</string>
 </resources>
