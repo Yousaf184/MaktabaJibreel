@@ -15,7 +15,8 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
 
         <SearchView
             android:layout_width="match_parent"
@@ -46,7 +47,8 @@
                 android:id="@+id/second-card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                card_view:cardBackgroundColor="@color/colorCardBackgroundDark">
+                card_view:cardBackgroundColor="@color/colorCardBackgroundDark"
+                card_view:layout_constraintTop_toTopOf="parent">
 
 
                 <LinearLayout
@@ -167,14 +169,16 @@
                         android:text="@string/filter_book_name"
                         android:padding="5dp"
                         android:textSize="13sp"
-                        app:layout_constraintRight_toRightOf="parent"/>
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/filter_book_results"
                         android:padding="5dp"
                         android:textSize="13sp"
-                        app:layout_constraintLeft_toLeftOf="parent" />
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
 
                 </android.support.constraint.ConstraintLayout>
@@ -306,14 +310,16 @@
                         android:text="@string/filter_book_name"
                         android:padding="5dp"
                         android:textSize="13sp"
-                        app:layout_constraintRight_toRightOf="parent"/>
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/filter_book_results"
                         android:padding="5dp"
                         android:textSize="13sp"
-                        app:layout_constraintLeft_toLeftOf="parent" />
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
 
                 </android.support.constraint.ConstraintLayout>

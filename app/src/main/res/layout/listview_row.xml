@@ -13,7 +13,8 @@
         android:layout_width="37dp"
         android:layout_height="37dp"
         android:src="@drawable/book"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/currently_read_book_title"
@@ -30,6 +31,8 @@
     <View
         style="@style/horizontal_line_break"
         app:layout_constraintTop_toBottomOf="@id/currently_read_book_title"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

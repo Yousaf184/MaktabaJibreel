@@ -21,7 +21,9 @@
             style="@style/toolbar"
             app:title="@string/app_name"
             app:titleTextColor="@color/colorText"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -121,7 +123,8 @@
                                 android:layout_height="40dp"
                                 android:src="@drawable/stack"
                                 app:layout_constraintLeft_toLeftOf="parent"
-                                app:layout_constraintRight_toRightOf="parent"/>
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -159,7 +162,8 @@
                                 android:layout_height="40dp"
                                 android:src="@drawable/ic_search"
                                 app:layout_constraintLeft_toLeftOf="parent"
-                                app:layout_constraintRight_toRightOf="parent"/>
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -197,7 +201,8 @@
                                 android:layout_height="40dp"
                                 android:src="@drawable/ic_star"
                                 app:layout_constraintLeft_toLeftOf="parent"
-                                app:layout_constraintRight_toRightOf="parent"/>
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -235,7 +240,8 @@
                                 android:layout_height="40dp"
                                 android:src="@drawable/book"
                                 app:layout_constraintLeft_toLeftOf="parent"
-                                app:layout_constraintRight_toRightOf="parent"/>
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -273,7 +279,8 @@
                                 android:layout_height="40dp"
                                 android:src="@drawable/bars"
                                 app:layout_constraintLeft_toLeftOf="parent"
-                                app:layout_constraintRight_toRightOf="parent"/>
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
 
                             <TextView
                                 android:layout_width="wrap_content"

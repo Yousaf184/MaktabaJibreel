@@ -8,7 +8,10 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_settings"
-        style="@style/toolbar">
+        style="@style/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
             style="@style/activity_toolbar_text"
@@ -35,7 +38,8 @@
                 android:id="@+id/general_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/colorCardBackgroundDark">
+                app:cardBackgroundColor="@color/colorCardBackgroundDark"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"

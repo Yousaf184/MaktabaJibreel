@@ -9,7 +9,9 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_detailed_search"
         style="@style/toolbar"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
             style="@style/activity_toolbar_text"
